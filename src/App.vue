@@ -20,31 +20,11 @@ const router = createRouter({
 })
 
 
-/*
-watchEffect(async () => {
-  // cet effet va être exécuté directement puis
-  // de nouveau chaque fois que currentBranch.value change
-  const url = 'http://163.172.211.49/pter/db_02/readVille_3.php?term=par'
-  const Response = await fetch(url,{
-    method: 'GET',
-    dataType: "json",
-    data:"",
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  })
-  console.log(Response)
-  const data= await Response.json()
-  console.log(data)
-    //console.log("Success:", result);
-  //console.log (receive.json())
-})
-*/
 </script>
 
 <template>
   
-  <h1>Hello App!</h1>
+  <h1>Application avec routeur!</h1>
   <CrudView msg="Message de App.vue"></CrudView>
   <p>
     <strong>Current route path:</strong> {{ $route.fullPath }}
