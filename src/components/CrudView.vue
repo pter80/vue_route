@@ -28,7 +28,7 @@
     
     const search = computed({
         get() {
-            console.log("pter",props)
+            
         },
         async set(search) {
             console.log(search)
@@ -46,28 +46,16 @@
         }
     }) 
     
-    
-    
-/*
-const url = 'http://163.172.211.49/pter/db_02/readVille_3.php?term=par'
-  const Response = await fetch(url,{
-    method: 'GET',
-    dataType: "json",
-    data:"",
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  })
-  console.log(Response)
-  const data= await Response.json()
-  console.log(data)
-  */
+
 </script>
 
 <template>
   
   <div>
-    <h1 class="green">Message : {{ msg }}</h1>
+    <h1 class="green">Message : {{ msg }} </h1>
+    <h2> {{ pter }}</h2>
+   
+   
    
     <h3>
       Création d'un CRUD
