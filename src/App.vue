@@ -25,7 +25,7 @@ const router = createRouter({
 <template>
   
   <h1>Application avec routeur!</h1>
-  <CrudView msg="Message de App.vue" pter="suite""></CrudView>
+  
   <p>
     <strong>Current route path:</strong> {{ $route.fullPath }}
   </p>
