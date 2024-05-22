@@ -37,7 +37,7 @@
       const url = 'http://163.172.211.49/pter/db_02/readVille_3.php?term='+newQuestion
       loading.value = true
       answer.value = 'Thinking...'
-      console.log(newQuestion)
+      console.log(newQuestion, oldQuestion)
       if (1==1) {
         loading.value = true
         answer.value = 'Thinking...'
@@ -63,7 +63,7 @@
       //return villes
     })
     
-    
+    /*
     const searchVille = computed({
         async get() {
         
@@ -85,7 +85,7 @@
         }
     }) 
     //console.log ("globale",villes);
-
+  */
 </script>
 
 <template>
